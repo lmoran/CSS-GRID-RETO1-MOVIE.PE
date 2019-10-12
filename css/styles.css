@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "header header" "nav contenido";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.contenido {
+    grid-area: contenido;
+}
