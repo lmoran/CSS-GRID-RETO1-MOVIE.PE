@@ -98,10 +98,47 @@
         
         .nav {
             grid-area: nav;
+            background: #ff5d60;
         }
         
-        .contenido {
-            grid-area: contenido;
+        .nav-container {
+            height: 88vh;
+            display: grid;
+            grid-template-rows: repeat(3, auto) 1fr auto;
+            grid-template-areas: "home" "fire" "like" "." "ajust";
+            grid-gap: 25px;
+            padding: 10px 0;
+        }
+        
+        .navi {
+            color: white;
+            font-size: 1.1em;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .navi i {
+            font-size: 2em;
+        }
+        
+        .navi p {
+            margin: 0;
+        }
+        
+        .home {
+            grid-area: home;
+        }
+        
+        .fire {
+            grid-area: fire;
+        }
+        
+        .like {
+            grid-area: like;
+        }
+        
+        .ajust {
+            grid-area: ajust;
         }
         
         @media screen and (max-width:1024px) {
