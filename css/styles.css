@@ -14,6 +14,46 @@ body {
     grid-area: header;
 }
 
+.header-container {
+    display: grid;
+    /*  grid-template-columns: 1fr 4fr 1fr; */
+    grid-template-columns: auto minmax(100px, .9fr) auto;
+    grid-template-rows: 70px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-self: center;
+}
+
+.logo {
+    margin: 0;
+    display: inline-block;
+    /* text-align: center; */
+}
+
+.logo img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.header-logo span {
+    -webkit-text-stroke: 1.2px red;
+    color: transparent;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.foto img {
+    width: 100%;
+    max-width: 50px;
+}
+
 .nav {
     grid-area: nav;
 }
