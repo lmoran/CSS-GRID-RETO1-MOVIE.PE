@@ -141,6 +141,80 @@ body {
     grid-area: ajust;
 }
 
+.contenido {
+    height: 88vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.contenido-estreno {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.titulo {
+    margin-left: 1em;
+}
+
+.contenido-detalle {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    /*   overflow: scroll; */
+    grid-gap: 20px;
+    padding: 0 1em;
+}
+
+.contenido-detalle .content {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: inherit;
+}
+
+.contenido-detalle figure {
+    margin: 0;
+    max-width: 400px;
+}
+
+.contenido-detalle img {
+    width: 100%;
+}
+
+h2 {
+    margin: .3em 0;
+}
+
+.post-overlay h2 {
+    margin-left: .3em;
+}
+
+.post-overlay p {
+    margin: .5em;
+    text-align: justify;
+    margin-top: 0;
+    font-size: .9em;
+}
+
+.post-overlay {
+    background: rgba(255, 93, 96, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 110px; */
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    height: auto;
+    /* padding: 5px; */
+}
+
+.content:hover .post-overlay {
+    display: block;
+}
+
 @media screen and (max-width:1024px) {
     .header-form {
         justify-self: initial;
@@ -167,11 +241,18 @@ body {
         font-size: 1.2em;
     }
     .nav-container {
+        height: 100%;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 70px;
+        grid-template-rows: auto;
         grid-template-areas: "home fire like ajust";
+        justify-content: space-evenly;
         grid-gap: 10px;
+        background: #ff5d60;
+    }
+    .contenido {
+        height: 100%;
+        width: 100%;
     }
 }
