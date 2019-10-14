@@ -158,8 +158,10 @@ body {
 
 .contenido-detalle {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    /*   overflow: scroll; */
+    overflow: scroll;
+    grid-template-columns: 400px;
+    grid-auto-columns: 400px;
+    grid-auto-flow: column;
     grid-gap: 20px;
     padding: 0 1em;
 }
